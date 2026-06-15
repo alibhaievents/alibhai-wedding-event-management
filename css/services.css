@@ -1,0 +1,336 @@
+/* =========================
+SERVICES PAGE
+========================= */
+
+.service-text{
+color:#ffffff;
+text-align:center;
+max-width:1000px;
+margin:0 auto;
+line-height:1.8;
+}
+
+/* SERVICES CONTAINER */
+
+.services-container{
+width:90%;
+max-width:1200px;
+margin:30px auto 50px;
+}
+
+/* SERVICE CARD */
+
+.service-card{
+margin-bottom:20px;
+
+
+border:1px solid #d4af37;
+
+border-radius:10px;
+
+overflow:hidden;
+
+background:#050505;
+
+transition:.3s;
+
+
+}
+
+.service-card:hover{
+box-shadow:
+0 0 20px rgba(212,175,55,.25);
+}
+
+.service-item::before{
+    content:"◆";
+
+    color:#d4af37;
+
+    margin-right:10px;
+}
+
+/* HEADER */
+
+.service-header{
+padding:20px 25px;
+
+color:#d4af37;
+
+font-size:22px;
+
+font-weight:600;
+
+cursor:pointer;
+
+user-select:none;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+/* PLUS / MINUS */
+
+.service-header::after{
+content:"+";
+
+
+font-size:28px;
+
+color:#d4af37;
+
+
+}
+
+.service-card.active .service-header::after{
+content:"−";
+}
+
+/* CONTENT */
+
+.service-content{
+display:none;
+
+
+padding:20px;
+
+border-top:1px solid rgba(212,175,55,.3);
+
+background:#111;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:12px;
+
+
+}
+
+/* ACTIVE */
+
+.service-card.active .service-content{
+display:grid;
+}
+
+/* CATEGORY TITLE */
+
+.service-content h3{
+
+
+grid-column:1/-1;
+
+color:#d4af37;
+
+margin:15px 0 5px;
+
+font-size:20px;
+
+}
+
+/* SERVICE ITEM */
+
+.service-item{
+
+
+background:
+rgba(212,175,55,.08);
+
+border-left:
+3px solid #d4af37;
+
+padding:12px 15px;
+
+border-radius:6px;
+
+color:#ffffff;
+
+transition:.3s;
+
+
+}
+
+.service-item:hover{
+
+
+transform:translateX(5px);
+
+background:
+rgba(212,175,55,.15);
+
+
+}
+
+
+
+/* BACK BUTTON */
+
+.back-container{
+text-align:center;
+padding:40px 0 80px;
+}
+
+.back-btn{
+background:#d4af37;
+color:#000;
+
+
+border:none;
+
+padding:12px 30px;
+
+border-radius:6px;
+
+cursor:pointer;
+
+font-size:16px;
+
+font-weight:600;
+
+transition:.3s;
+
+
+}
+
+.back-btn:hover{
+background:#fff;
+
+
+transform:translateY(-3px);
+
+
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+
+    bottom:25px;
+    right:25px;
+
+    width:55px;
+    height:55px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    border:2px solid #25D366;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    font-size:26px;
+
+    z-index:999;
+}
+
+.whatsapp{
+    background:#25D366;
+    border:2px solid #d4af37;
+    color:#fff;
+}
+
+.whatsapp{
+    animation:pulse 2s infinite;
+}
+
+
+/* INSTAGRAM ICON */
+
+.instagram-dropdown{
+    position:absolute;
+    top:50px;
+    right:40px;
+    z-index:1000;
+}
+
+.instagram-icon{
+    color:#d4af37;
+    font-size:30px;
+    text-decoration:none;
+}
+
+.instagram-menu{
+
+    position:absolute;
+
+    top:30px;
+    right:0;
+
+    width:220px;
+
+    background:#111;
+
+    border:1px solid #d4af37;
+
+    border-radius:10px;
+
+    display:none;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 0 15px rgba(212,175,55,.3);
+}
+
+.instagram-menu a{
+
+    display:block;
+
+    padding:12px 15px;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.instagram-menu a:hover{
+
+    background:#d4af37;
+
+    color:black;
+}
+
+.instagram-dropdown:hover .instagram-menu{
+    display:block;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.services-container{
+    width:95%;
+}
+
+.service-header{
+    font-size:18px;
+    padding:18px;
+}
+
+.service-content{
+    grid-template-columns:1fr;
+}
+
+.service-content h3{
+    font-size:18px;
+}
+
+.service-item{
+    font-size:14px;
+}
+
+
+}

@@ -1,0 +1,237 @@
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media screen and (max-width:768px){
+
+    /* LOGO */
+
+    .top-logo img{
+        width:70px;
+    }
+
+    /* NAVBAR */
+
+    .navbar ul{
+        flex-wrap:wrap;
+        gap:15px;
+        justify-content:center;
+    }
+
+    .navbar ul li a{
+        font-size:16px;
+    }
+
+    /* HERO SECTION */
+
+    .hero-content{
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
+    }
+
+    .hero-left,
+    .hero-right{
+        width:100%;
+    }
+
+    .hero-logo{
+        width:90%;
+        max-width:350px;
+    }
+
+    .hero-right h1{
+        font-size:32px;
+    }
+
+    .sub-title{
+        font-size:18px;
+    }
+
+    .tagline{
+        font-size:16px;
+    }
+
+    /* GALLERY */
+
+    .gallery-grid{
+        width:92%;
+        gap:20px;
+        margin: 30px auto;
+    }
+
+    .design-card{
+        width:100%;
+    
+    }
+
+    .design-card img{
+        height:auto;
+    }
+
+    /* SERVICES */
+
+    .service-content{
+        grid-template-columns:1fr !important;
+    }
+
+    .service-header{
+        font-size:18px;
+    }
+
+    /* ABOUT */
+
+    .about-content{
+        flex-direction:column;
+    }
+
+    /* FOOTER */
+
+    .footer h3{
+        font-size:22px;
+    }
+
+    .footer-text{
+        font-size:14px;
+    }
+
+    /* WHATSAPP */
+
+    .whatsapp{
+        width:55px;
+        height:55px;
+        font-size:28px;
+        bottom:20px;
+        right:20px;
+    }
+
+    /* INSTAGRAM */
+
+    .instagram-dropdown{
+        top:75px;
+        right:15px;
+    }
+
+    .instagram-icon{
+        font-size:30px;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    /* LOGO */
+
+     .top-logo{
+        position:relative;
+        top:auto;
+        left:auto;
+        text-align:center;
+        margin:15px 0;
+    }
+
+    .top-logo img{
+        width:70px;
+    }
+
+
+    /* NAVBAR */
+
+     .navbar{
+        height:auto;
+        padding:10px 0;
+    }
+
+    .navbar ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .navbar ul li a{
+        font-size:14px;
+    }
+
+    /* INSTAGRAM */
+
+    .instagram-dropdown{
+        display:none;
+    }
+
+
+    /* HERO */
+
+    .hero-content{
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
+    }
+
+    .hero-logo{
+        width:90%;
+        max-width:320px;
+    }
+
+    .hero-right h1{
+        font-size:22px;
+        line-height:1.4;
+    }
+
+    .sub-title{
+        font-size:14px;
+    }
+
+    .tagline{
+        font-size:14px;
+    }
+
+    /* DESIGN CARDS */
+
+    .design-card{
+        width:100%;
+        max-width:340px;
+    }
+
+    /* WHATSAPP */
+
+    .whatsapp{
+        width:50px;
+        height:50px;
+        font-size:24px;
+        right:15px;
+        bottom:15px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding:30px 15px;
+    }
+
+    .footer h3{
+        font-size:20px;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    .about-hero{
+        padding:40px 15px;
+    }
+
+    .about-hero h1{
+        font-size:42px !important;
+        line-height:1.2;
+        text-align:center;
+        word-break:break-word;
+    }
+
+    .about-hero p{
+        font-size:18px;
+        line-height:1.8;
+        padding:0 10px;
+    }
+
+}

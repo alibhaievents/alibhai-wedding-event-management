@@ -1,0 +1,156 @@
+/* =========================
+   DESIGN COLLECTIONS
+========================= */
+
+.collections{
+    width:100%;
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:50px 5% 100px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(350px,1fr));
+
+    gap:35px;
+}
+
+.about-hero p{
+    color:#ffffff !important;
+    text-align:justify;
+    max-width:1000px;
+    margin:20px auto 0;
+    font-size:22px;
+    line-height:1.8;
+}
+
+/* CARD */
+
+.collection-card{
+
+    background:#050505;
+
+    border:1px solid #d4af37;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    transition:.4s;
+
+    box-shadow:
+    0 0 10px rgba(212,175,55,.15);
+}
+
+.collection-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 25px rgba(212,175,55,.35);
+}
+
+/* IMAGE */
+
+.collection-card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.4s;
+}
+
+.collection-card:hover img{
+
+    transform:scale(1.05);
+}
+
+/* CONTENT */
+
+.collection-content{
+
+    padding:25px;
+
+    text-align:center;
+}
+
+.collection-content h2{
+
+    color:#d4af37;
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+    animation:
+    goldGlow 3s ease-in-out infinite alternate;
+}
+
+.collection-content p{
+
+    color:#ffffff;
+
+    font-size:18px;
+
+    margin-bottom:20px;
+}
+
+.collection-content span{
+
+    display:inline-block;
+
+    color:#d4af37;
+
+    border:1px solid #d4af37;
+
+    padding:10px 20px;
+
+    transition:.4s;
+}
+
+.collection-card:hover span{
+
+    background:#d4af37;
+
+    color:#000;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .collections{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+        padding:30px 5% 80px;
+    }
+
+    .collection-card img{
+
+        height:220px;
+    }
+
+    .collection-content h2{
+
+        font-size:24px;
+    }
+
+    .collection-content p{
+
+        font-size:16px;
+    }
+
+}
