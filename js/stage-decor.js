@@ -2,7 +2,7 @@ const gallery = document.getElementById("gallery-grid");
 
 const whatsappNumber = "916383212174";
 
-for(let i = 1; i <= 41; i++){
+for(let i = 1; i <= 43; i++){
 
     const num = String(i).padStart(3, '0');
 
